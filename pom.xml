@@ -18,6 +18,7 @@
     <modules>
         <!--Feign-->
         <module>spring-cloud-sample-feign</module>
+        <module>spring-cloud-sample-apollo</module>
     </modules>
 
     <dependencies>
