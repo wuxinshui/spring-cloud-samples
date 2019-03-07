@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    consul:
+      discovery:
+        port: 8003
+        hostname: localhost

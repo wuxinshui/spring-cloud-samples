@@ -9,16 +9,10 @@
     </parent>
 
     <groupId>com.wuxinshui.springcloud</groupId>
-    <artifactId>spring-cloud-sample-feign</artifactId>
+    <artifactId>spring-cloud-sample-feign-service</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
-    <name>spring-cloud-sample-feign</name>
-
-    <modules>
-        <module>spring-cloud-sample-feign-service</module>
-        <module>spring-cloud-sample-feign-client</module>
-    </modules>
+    <name>spring-cloud-sample-feign-service</name>
 
     <dependencies>
         <dependency>

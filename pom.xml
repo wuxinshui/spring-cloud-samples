@@ -19,6 +19,17 @@
         <!--Feign-->
         <module>spring-cloud-sample-feign</module>
         <module>spring-cloud-sample-apollo</module>
+        <module>springcloud-sample-consul-client</module>
+        <module>springcloud-sample-eureka-client</module>
+        <module>springcloud-sample-eureka-consumer</module>
+        <module>springcloud-sample-eureka-consumer-ribbon</module>
+        <module>springcloud-sample-eureka-server</module>
+        <module>springcloud-sample-feign-consumer</module>
+        <module>springcloud-sample-feign-provider</module>
+        <module>springcloud-sample-feign-ribbon-provider1</module>
+        <module>springcloud-sample-feign-ribbon-provider2</module>
+        <module>springcloud-sample-feign-ribbon-provider3</module>
+        <module>springcloud-sample-feign-ribbon-consumer</module>
     </modules>
 
     <dependencies>
@@ -79,7 +90,6 @@
                     <source>1.7</source>
                     <target>1.7</target>
                 </configuration>
-
             </plugin>
         </plugins>
     </build>
