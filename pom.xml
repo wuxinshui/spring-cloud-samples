@@ -30,6 +30,12 @@
         <module>springcloud-sample-feign-ribbon-provider2</module>
         <module>springcloud-sample-feign-ribbon-provider3</module>
         <module>springcloud-sample-feign-ribbon-consumer</module>
+        <!--验证 消费者请求不同注册中心的服务 start-->
+        <module>springcloud-sample-eureka-server-2</module>
+        <module>springcloud-sample-feign-eureka1-provider</module>
+        <module>springcloud-sample-feign-eureka2-provider</module>
+        <module>springcloud-sample-feign-eureka1-2-consumer</module>
+        <!--验证 消费者请求不同注册中心的服务 end-->
     </modules>
 
     <dependencies>
