@@ -1,0 +1,12 @@
+server:
+  port: 8021
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+#    自我保护模式关闭
+    enable-self-preservation: false
