@@ -1,17 +1,12 @@
-# Eureka Server Sample
+# 知识点
 
-Run this project as a Spring Boot app (e.g. import into IDE and run
-main method, or use "mvn spring-boot:run or gradle bootRun or ./gradlew bootRun"). It will start up on port
-8761 and serve the Eureka API from "/eureka".
+## DiscoveryClient
 
-## Resources
+## Feign
 
-| Path             | Description  |
-|------------------|--------------|
-| /                        | Home page (HTML UI) listing service registrations          |
-| /eureka/apps         | Raw registration metadata |
+在Feign中使用@RequestHeader、@RequestParam等可以指定参数名称的注解，需要显示指定value的值，才能绑定参数。
+在Spring MVC 中不用显示指定value，会默认用参数作为value
 
-## Docker Container
-
-There is a Maven goal (using a [plugin](https://github.com/spring-cloud-samples/eureka/blob/feature/docker/pom.xml#L48)) to 
-generate the Docker container. The container is published in dockerhub at `springcloud/eureka`.
+### Feign-@RequestParam
+### Feign-@RequestHeader
+### Feign-@RequestBody

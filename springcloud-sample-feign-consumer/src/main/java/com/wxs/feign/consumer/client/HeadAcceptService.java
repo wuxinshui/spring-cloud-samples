@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 /**
  * @Author: yoyo
- * @Description:
+ * @Description: 在Feign中使用@RequestHeader，绑定参数，需要显示指定value的值，
+ * 在Spring MVC 中会默认用参数作为value
  * @Date: Created in 2019/2/25 17:44
  */
 @FeignClient(name = "feign-provider")
