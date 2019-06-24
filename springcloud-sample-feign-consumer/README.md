@@ -14,3 +14,5 @@
 ## Configuration
 - ribbon ReadTimeout
 - ribbon ConnectionTimeout
+
+## [Creating Feign Clients Manually](https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-feign.html)
