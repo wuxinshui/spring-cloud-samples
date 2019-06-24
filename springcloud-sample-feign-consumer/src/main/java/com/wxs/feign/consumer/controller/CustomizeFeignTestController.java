@@ -1,6 +1,6 @@
 package com.wxs.feign.consumer.controller;
 
-import com.wxs.feign.consumer.client.CustomizeFeignApi;
+import com.wxs.feign.provider.api.CustomizeFeignApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
