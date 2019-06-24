@@ -26,6 +26,7 @@
         <module>springcloud-sample-eureka-server</module>
         <module>springcloud-sample-feign-consumer</module>
         <module>springcloud-sample-feign-provider</module>
+        <module>springcloud-sample-feign-provider-spi</module>
         <module>springcloud-sample-feign-ribbon-provider1</module>
         <module>springcloud-sample-feign-ribbon-provider2</module>
         <module>springcloud-sample-feign-ribbon-provider3</module>
