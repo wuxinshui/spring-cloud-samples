@@ -1,7 +1,6 @@
 package com.wxs.feign.provider.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import com.wxs.feign.provider.api.CustomizeFeignApi;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -10,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: Created in 2019/6/24 14:20
  */
 @RestController
-public class CustomizeFeignController {
-    @RequestMapping(value = "/customize", method = RequestMethod.GET)
+public class CustomizeFeignController implements CustomizeFeignApi {
+    @Override
     public String queryCustomize() {
         return "success";
     }
