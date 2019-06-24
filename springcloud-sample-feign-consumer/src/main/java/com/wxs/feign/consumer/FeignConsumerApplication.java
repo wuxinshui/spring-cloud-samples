@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
-@ComponentScan("com.wxs.feign.consumer")
+//@ComponentScan("com.wxs.feign.consumer")
 public class FeignConsumerApplication {
 
     public static void main(String[] args) throws Exception {

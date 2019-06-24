@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @Description:
  * @Date: Created in 2019/6/24 14:18
  */
-@FeignClient(name = "feign-provider")
+//@FeignClient(name = "feign-provider")
 public interface CustomizeFeignApi {
 
     @RequestMapping(value = "/customize", method = RequestMethod.GET)
