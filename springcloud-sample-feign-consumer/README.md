@@ -16,3 +16,6 @@
 - ribbon ConnectionTimeout
 
 ## [Creating Feign Clients Manually](https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-feign.html)
+
+[Feign: Method not annotated with HTTP method type (ex. GET, POST)](https://github.com/spring-cloud/spring-cloud-netflix/issues/760
+)
