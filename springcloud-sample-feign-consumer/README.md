@@ -10,3 +10,7 @@
 ### Feign-@RequestParam
 ### Feign-@RequestHeader
 ### Feign-@RequestBody
+
+## Configuration
+- ribbon ReadTimeout
+- ribbon ConnectionTimeout

@@ -1,6 +1,12 @@
 server:
-  port: 8005
+  port: ${random.int(6000,7000)}
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8001/eureka/
+# ribbon 全局配置
+ribbon.ConnectTimeout: 500
+ribbon.ReadTimeout: 500
+#指定服务配置
+feign-ribbon-provider.ribbon.ConnectTimeout: 500
+feign-ribbon-provider.ribbon.ReadTimeout: 500
