@@ -1,12 +1,28 @@
 server:
-  port: ${random.int(6000,7000)}
+#  port: ${random.int(6000,7000)}
+  port: 6093
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8001/eureka/
 # ribbon 全局配置
+#建立TCP连接超时时间
 ribbon.ConnectTimeout: 500
+#数据读取超时时间
 ribbon.ReadTimeout: 500
+#更换实例访问次数，更换2次实例重试
+ribbon.MaxAutoRetriesNextServer: 2
+#重试1次
+ribbon.MaxAutoRetries: 1
 #指定服务配置
 feign-ribbon-provider.ribbon.ConnectTimeout: 500
 feign-ribbon-provider.ribbon.ReadTimeout: 500
+feign-ribbon-provider.ribbon.MaxAutoRetriesNextServer: 2
+feign-ribbon-provider.ribbon.MaxAutoRetries: 1
+#feign 日志
+logging:
+  level:
+#  手动创建的FeignClient
+    com.wxs.feign.provider.api.CustomizeFeignApi: debug
+    com.wxs.feign.consumer.client.HeadAcceptService: debug
+debug: true

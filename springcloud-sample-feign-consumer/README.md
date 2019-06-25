@@ -10,6 +10,17 @@
 ### Feign-@RequestParam
 ### Feign-@RequestHeader
 ### Feign-@RequestBody
+### Feign 日志
+
+- 手动创建的`FeignClient`，需要指定Logger,Logger.Level
+- 自动创建的只需要指定api path
+
+```
+logging:
+  level:
+    com.wxs.feign.provider.api.CustomizeFeignApi: debug
+    com.wxs.feign.consumer.client.HeadAcceptService: debug
+```
 
 ## Configuration
 - ribbon ReadTimeout
@@ -19,3 +30,5 @@
 
 [Feign: Method not annotated with HTTP method type (ex. GET, POST)](https://github.com/spring-cloud/spring-cloud-netflix/issues/760
 )
+
+## SPI
