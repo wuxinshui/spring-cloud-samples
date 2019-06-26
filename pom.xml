@@ -37,6 +37,8 @@
         <module>springcloud-sample-feign-eureka2-provider</module>
         <module>springcloud-sample-feign-eureka1-2-consumer</module>
         <!--验证 消费者请求不同注册中心的服务 end-->
+        <!--zuul 路由网关-->
+        <module>springcloud-sample-zuul</module>
     </modules>
 
     <dependencies>
