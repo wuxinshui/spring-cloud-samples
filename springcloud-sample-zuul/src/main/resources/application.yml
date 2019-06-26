@@ -7,3 +7,5 @@ eureka:
 zuul:
   routes:
     feign-consumer: feign-consumer
+#    默认不为注册中心的所有服务自动创建路由规则
+  ignored-services: *
