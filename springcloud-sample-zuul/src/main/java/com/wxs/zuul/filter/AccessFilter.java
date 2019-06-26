@@ -1,9 +1,12 @@
 package com.wxs.zuul.filter;
 
 import com.netflix.zuul.ZuulFilter;
+import com.netflix.zuul.context.RequestContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @Author: yoyo
@@ -13,7 +16,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AccessFilter extends ZuulFilter {
 
-    private final Logger logger=LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 
     /**
@@ -58,6 +61,8 @@ public class AccessFilter extends ZuulFilter {
     @Override
     public Object run() {
         logger.info("AccessFilter run...");
+        RequestContext context = RequestContext.getCurrentContext();
+        HttpServletRequest request = context.getRequest();
         return null;
     }
 }
