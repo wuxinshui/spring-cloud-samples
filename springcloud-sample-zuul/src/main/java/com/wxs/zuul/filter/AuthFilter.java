@@ -3,6 +3,7 @@ package com.wxs.zuul.filter;
 import com.netflix.zuul.ZuulFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
 
 /**
@@ -23,7 +24,7 @@ public class AuthFilter extends ZuulFilter {
      */
     @Override
     public String filterType() {
-        return "pre";
+        return FilterConstants.PRE_TYPE;
     }
 
 
