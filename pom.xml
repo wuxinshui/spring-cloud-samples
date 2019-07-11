@@ -39,6 +39,9 @@
         <!--验证 消费者请求不同注册中心的服务 end-->
         <!--zuul 路由网关-->
         <module>springcloud-sample-zuul</module>
+        <!--hystrix-->
+        <module>springcloud-sample-hystrix-consumer</module>
+        <module>springcloud-sample-hystrix-provider</module>
     </modules>
 
     <dependencies>
