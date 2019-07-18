@@ -42,6 +42,9 @@
         <!--hystrix-->
         <module>springcloud-sample-hystrix-consumer</module>
         <module>springcloud-sample-hystrix-provider</module>
+        <!--Eureka集群部署-->
+        <module>springcloud-sample-eureka-cluster-server-1</module>
+        <module>springcloud-sample-eureka-cluster-server-2</module>
     </modules>
 
     <dependencies>

@@ -1,4 +1,4 @@
-package com.wxs.eureka.server;
+package com.wxs.eureka.cluster;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,10 +10,10 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  */
 @SpringBootApplication
 @EnableEurekaServer
-public class EurekaServerApplication {
+public class EurekaClusterServer1Application {
 
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(EurekaServerApplication.class, args);
+		SpringApplication.run(EurekaClusterServer1Application.class, args);
 	}
 
 }
