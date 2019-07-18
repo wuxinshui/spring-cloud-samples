@@ -1,5 +1,5 @@
 server:
-  port: 6002
+  port: 6001
 eureka:
   instance:
     hostname: localhost
@@ -9,7 +9,7 @@ eureka:
 #    不去检索服务
 #    fetchRegistry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:6001/eureka/
+      defaultZone: http://${eureka.instance.hostname}:6002/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
 #    自我保护模式关闭
