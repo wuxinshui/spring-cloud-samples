@@ -32,3 +32,8 @@ logging:
 )
 
 ## SPI
+
+## QA check
+
+### java.lang.IllegalArgumentException: Illegal character in path at index 28:
+[Feign does not support @PathVariable for path at @FeignClient ](https://github.com/spring-cloud/spring-cloud-netflix/issues/2406)

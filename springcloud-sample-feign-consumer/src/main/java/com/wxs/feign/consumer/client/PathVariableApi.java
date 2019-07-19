@@ -3,6 +3,7 @@ package com.wxs.feign.consumer.client;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
 
@@ -13,6 +14,6 @@ import java.util.Map;
  */
 @FeignClient(name = "feign-provider")
 public interface PathVariableApi {
-    @GetMapping("/path/{value}")
-    public Map getRequestParam(@PathVariable("value") String value);
+    @GetMapping("/path/{value}/test")
+    public Map getRequestParam(@PathVariable("value") String value, @RequestParam("param") String param);
 }

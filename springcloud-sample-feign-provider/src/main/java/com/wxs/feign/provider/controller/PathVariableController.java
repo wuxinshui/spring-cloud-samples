@@ -23,9 +23,9 @@ public class PathVariableController {
      * @param value
      * @return
      */
-    @GetMapping("/path/{value}")
-    public Map getRequestParam(@PathVariable("value") String value) {
-        log.info("request-param value is {}", value);
+    @GetMapping("/path/{value}/test")
+    public Map getRequestParam(@PathVariable("value") String value, @RequestParam("param") String param) {
+        log.info("request-param value is {},param:{}", value, param);
         return Map.of("code", "200", "msg", "success", "data", Map.of("value", value));
 
     }
