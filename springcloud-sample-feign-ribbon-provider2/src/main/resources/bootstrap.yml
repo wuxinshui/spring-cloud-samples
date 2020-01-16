@@ -1,4 +1,4 @@
 spring:
   application:
-    name: feign-ribbon-provider
+    name: feign-ribbon-provider2
 

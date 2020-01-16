@@ -8,6 +8,7 @@ import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
+import java.time.LocalDateTime;
 
 /**
  * @Author: yoyo
@@ -62,8 +63,12 @@ public class AccessFilter extends ZuulFilter {
     @Override
     public Object run() {
         logger.info("AccessFilter run...");
+        long start = LocalDateTime.now().getNano();
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
+        long end = LocalDateTime.now().getNano();
+
+        System.out.println("AccessFilter cost time:" + (end - start));
         return null;
     }
 }

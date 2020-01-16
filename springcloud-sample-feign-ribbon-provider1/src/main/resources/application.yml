@@ -5,4 +5,5 @@ eureka:
     service-url:
 #      defaultZone: http://localhost:8001/eureka/
 #Eureka集群
-      defaultZone: http://localhost:6001/eureka/,http://localhost:6002/eureka/
+#      defaultZone: http://localhost:6001/eureka/,http://localhost:6002/eureka/
+      defaultZone: http://localhost:6001/eureka/
