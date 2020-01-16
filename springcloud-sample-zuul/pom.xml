@@ -23,12 +23,13 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>1.4.6.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zuul</artifactId>
-            <!--<version>1.4.6.RELEASE</version>-->
+            <version>1.4.6.RELEASE</version>
         </dependency>
 
         <!-- 21. java10 环境下Javaee 编译需要 -->

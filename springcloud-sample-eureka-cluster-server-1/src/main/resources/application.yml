@@ -8,8 +8,8 @@ eureka:
 #    registerWithEureka: false
 #    不去检索服务
 #    fetchRegistry: false
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:6002/eureka/
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:6002/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
 #    自我保护模式关闭

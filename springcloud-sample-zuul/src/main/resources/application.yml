@@ -1,11 +1,11 @@
 server:
-  port: 8000
+  port: 8001
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8001/eureka/
+      defaultZone: http://localhost:6001/eureka/
 zuul:
   routes:
     feign-consumer: feign-consumer
 #    默认不为注册中心的所有服务自动创建路由规则
-  ignored-services: *
+#    ignored-services: *
